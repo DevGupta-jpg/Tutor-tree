@@ -1,0 +1,1718 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    /* background-color: #f4f4f4; */
+}
+
+
+*{
+    padding: 0px 0px;
+    margin: 0px 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* header part open */
+.navbar-brand {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff !important;
+}
+.navbar-brand span {
+  font-size: 42px;
+  color: #ff3b3b;
+  font-weight: 900;
+}
+
+/* Navbar Background */
+.navbar {
+  background: #000 !important;
+  transition: 0.4s;
+}
+
+/* Scroll Shadow Effect */
+.navbar.scrolled {
+  box-shadow: 0 4px 12px rgba(255,255,255,0.25);
+}
+
+/* Menu Items */
+.navbar-nav .nav-link {
+  font-size: 18px;
+  color: #fff !important;
+  position: relative;
+  transition: 0.4s;
+}
+
+/* Underline animation */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 3px;
+  background: #ff3b3b;
+  transition: width 0.4s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff3b3b !important;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Contact Button */
+.contact-btn {
+  background: #ff3b3b;
+  color: #fff !important;
+  padding: 8px 18px;
+  border-radius: 5px;
+  transition: 0.4s;
+  font-weight: 500;
+}
+
+.contact-btn:hover {
+  background: white;
+  color: #ff3b3b !important;
+  border: 2px solid #ff3b3b;
+  transform: scale(1.1);
+
+
+
+}
+.jack h4{
+    padding-top: 10px;
+}
+/* header part close */
+
+
+
+
+
+
+
+
+
+
+/*banner part open  */
+    .admission-box {
+      position: fixed;
+      top: 50%;
+      right: 70px;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.92);
+      color: #fff;
+      padding: 35px;
+      border-radius: 12px;
+      width: 320px;
+      z-index: 10;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+      animation: slideInRight 1s ease-out;
+    }
+
+    .admission-box h3 {
+      text-align: center;
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .admission-box p {
+      text-align: center;
+      font-size: 14px;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .admission-box input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      background: #111;
+      color: #fff;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .admission-box button {
+      width: 100%;
+      background: #ffb100;
+      border: none;
+      border-radius: 5px;
+      color: #000;
+      padding: 12px;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .admission-box button:hover {
+      background: #fff;
+    }
+           /* ===== Banner Section ===== */
+    .bannerw3l-hnyv {
+      position: relative;
+      width: 100%;
+      height: 110vh;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    /* Background Video */
+    #myVideo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    /* Overlay for text readability */
+    .banner-layer::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: 1;
+    }
+
+    /* Banner Text Container */
+    .main-content-top {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .main-content {
+      max-width: 650px;
+      animation: fadeInUp 1.3s ease-out;
+    }
+
+    .main-content h4 {
+      text-transform: uppercase;
+      font-size: 18px;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      color: #ffb100;
+      margin-top: 116px;
+    }
+
+    .main-content h3 {
+      font-size: 54px;
+      line-height: 1.2;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+
+    .main-content .inn-text {
+      color: #ffb100;
+    }
+
+    /* Buttons Container */
+    .btn-group {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    /* Button Styles */
+    .btn-style {
+      display: inline-block;
+      padding: 12px 32px;
+      font-size: 17px;
+      border: 2px solid #fff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      background: transparent;
+    }
+
+    .btn-style:hover {
+      background: #ffb100;
+      color: #000;
+      border-color: #ffb100;
+    }
+
+    /* Animation */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      .main-content h3 {
+        font-size: 40px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .main-content h3 {
+        font-size: 32px;
+      }
+      .btn-group {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+
+.impotant{
+    margin: 10px 0px 30px 0px;
+}
+
+
+/* banner part close */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main four grid part open */
+        .features-section {
+            padding: 80px 0;
+            background-color: #0A0A0B; /* Dark background */
+            color: #f8f9fa; /* Light text color */
+        }
+
+        .features-section .sub-title {
+            color: #aaa; /* Lighter "BEST FEATURES" text */
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .features-section .main-title {
+            color: #fff;
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+
+        .feature-card {
+            background-color: #1a1a1c; /* Slightly lighter card background */
+            padding: 30px;
+            border-radius: 10px;
+            height: 100%; /* Make cards equal height */
+            /* The all-important transition for the hover effect */
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* --- The Hover Animation --- */
+        .feature-card:hover {
+            /* Lifts the card up */
+            transform: translateY(-10px);
+            /* Adds a colored glow based on the icon color */
+            box-shadow: 0 10px 30px -5px var(--icon-glow-color, rgba(255, 255, 255, 0.1));
+        }
+
+        .feature-card .icon-circle {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.8rem;
+            color: #fff;
+            /* Transition for the icon background */
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover .icon-circle {
+            /* Example of a hover effect on the icon */
+            transform: scale(1.1);
+        }
+
+        /* --- Icon Colors --- */
+        /* Card 1: Expert Teachers (Red) */
+        .feature-card.style-1 {
+            --icon-glow-color: rgba(220, 53, 69, 0.4);
+        }
+        .feature-card.style-1 .icon-circle {
+            background-color: #dc3545; /* Red */
+        }
+
+        /* Card 2: Quality Education (Blue) */
+        .feature-card.style-2 {
+            --icon-glow-color: rgba(13, 110, 253, 0.4);
+        }
+        .feature-card.style-2 .icon-circle {
+            background-color: #0d6efd; /* Blue */
+        }
+
+        /* Card 3: Life Time Support (Yellow) */
+        .feature-card.style-3 {
+            --icon-glow-color: rgba(255, 193, 7, 0.4);
+        }
+        .feature-card.style-3 .icon-circle {
+            background-color: #ffc107; /* Yellow */
+        }
+
+        /* Card 4: Best Scholarships (Green) */
+        .feature-card.style-4 {
+            --icon-glow-color: rgba(25, 135, 84, 0.4);
+        }
+        .feature-card.style-4 .icon-circle {
+            background-color: #198754; /* Green */
+        }
+
+
+        .feature-card h5 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            color: #aaa;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+/* main four grid part close */
+
+
+
+/* Best course part open */
+        .courses-section {
+            padding: 80px 0;
+            background-color: #0A0A0B; /* Dark background */
+            color: #f8f9fa; /* Light text color */
+        }
+
+        .courses-section .sub-title {
+            color: #aaa; /* Lighter "BEST COURSES" text */
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .courses-section .main-title {
+            color: #fff;
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+
+        .course-card {
+            background-color: #1a1a1c; /* Slightly lighter card background */
+            border-radius: 10px;
+            overflow: hidden; /* This is key for the image zoom effect */
+            height: 100%;
+            border: 1px solid #2a2a2c; /* Subtle border */
+            /* The transition for the hover animation */
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* --- The Hover Animation --- */
+        .course-card:hover {
+            /* Lifts the card up */
+            transform: translateY(-10px);
+            /* Adds a subtle white glow */
+            box-shadow: 0 10px 30px -5px rgba(255, 255, 255, 0.05);
+        }
+
+        .course-card .card-img-container {
+            overflow: hidden; /* Ensures the image zoom stays within bounds */
+            border-radius: 10px 10px 0 0;
+        }
+
+        .course-card .card-img-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            /* Transition for the zoom effect */
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* --- Image zoom on hover --- */
+        .course-card:hover .card-img-container img {
+            transform: scale(1.1);
+        }
+
+        .course-card .card-content {
+            padding: 25px;
+        }
+
+        .course-card .category-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #00bcd4; /* Light blue/cyan color from image */
+            margin-bottom: 10px;
+            /* Transition for color change */
+            transition: color 0.3s ease;
+        }
+
+        /* --- Title color change on hover --- */
+        .course-card:hover .category-title {
+            color: #ffc107; /* Yellow accent */
+        }
+
+        .course-card .meta-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            color: #aaa;
+            margin-bottom: 15px;
+        }
+
+        .course-card .meta-info .classes {
+            /* Simple flex for alignment */
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .course-card .meta-info .classes .icon {
+            /* Using a simple border for the "icon" */
+            width: 16px;
+            height: 16px;
+            border: 2px solid #555;
+            border-radius: 3px;
+        }
+
+        .course-card .meta-info .rating {
+            color: #ffc107; /* Yellow for rating */
+            font-weight: 600;
+        }
+        
+        .course-card .meta-info .rating .fa-star {
+            font-size: 0.8em;
+        }
+
+        .course-card .sub-course-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .course-card .description {
+            color: #aaa;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+/* Best course part close */
+
+
+
+
+
+
+
+
+
+
+
+
+/* About me part open */
+
+        .about-section {
+            padding: 80px 0;
+            background-color: #0A0A0B; /* Dark background */
+            color: #aaa; /* Default light text */
+            overflow-x: hidden; /* Prevent horizontal scroll from animations */
+        }
+
+        /* --- Typography --- */
+        .about-section .sub-title {
+            color: #dc3545; /* Red accent from image */
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .about-section .main-title {
+            color: #fff;
+            font-weight: 700;
+            font-size: 2.5rem; /* Large, bold title */
+            margin-bottom: 20px;
+        }
+
+        .about-section .description {
+            color: #00bcd4; /* Cyan text from image */
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .about-section .features-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        .about-section .features-list li {
+            color: #fff;
+            font-size: 1.05rem;
+            margin-bottom: 12px;
+            display: flex;
+            /* align-items: flex-start;
+             */
+            /* Animation for list item hover */
+            transition: all 0.2s ease-out;
+        }
+      
+        .about-section .features-list .list-number {
+            color: #ffc107; /* Yellow for the number */
+            font-weight: 600;
+            margin-right: 10px;
+            min-width: 25px; /* Ensures alignment */
+        }
+
+        /* --- List Item Hover Animation --- */
+        .about-section .features-list li:hover {
+            color: #ffc107; /* Turn text yellow */
+            transform: translateX(5px); /* Slide right */
+        }
+        
+        .about-section .contact-info {
+            color: #00bcd4; /* Cyan text */
+            font-size: 0.95rem;
+            font-style: italic;
+        }
+
+        /* --- Image Gallery & Animations --- */
+        .image-gallery {
+            display: flex;
+            gap: 15px; /* Space between images */
+        }
+
+        .image-gallery .img-wrapper {
+            width: 50%;
+            border-radius: 10px;
+            overflow: hidden; /* To contain the image zoom */
+            border: 3px solid #333;
+            /* Main transition for border and shadow */
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        .image-gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 7px;
+            /* Start slightly gray */
+            filter: grayscale(40%);
+            /* Transition for zoom and filter */
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        /* --- Image Hover Animation --- */
+        .image-gallery .img-wrapper:hover {
+            border-color: #ffc107; /* Yellow border */
+            /* Yellow glow */
+            box-shadow: 0 10px 30px -5px rgba(255, 193, 7, 0.25);
+            transform: translateY(-5px);
+        }
+
+        .image-gallery .img-wrapper:hover img {
+            transform: scale(1.1); /* Zoom in */
+            filter: grayscale(0%); /* Full color */
+        }
+
+        /* --- Stats Row --- */
+        .stats-row {
+            border-top: 1px solid #333; /* Separator line */
+            margin-top: 60px;
+            padding-top: 60px;
+        }
+
+        .stat-card {
+            background-color: #1a1a1c; /* Card background */
+            padding: 30px 25px;
+            border-radius: 10px;
+            text-align: center;
+            height: 100%;
+            border: 1px solid #2a2a2c;
+            /* Transition for lift and glow */
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* --- Stats Card Hover Animation --- */
+        .stat-card:hover {
+            transform: translateY(-10px);
+            background-color: #222;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .stat-card .icon-wrapper {
+            font-size: 2.8rem;
+            color: #dc3545; /* Red icon */
+            margin-bottom: 15px;
+        }
+
+        .stat-card .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #fff;
+            margin: 0;
+            line-height: 1.1;
+        }
+
+        .stat-card .stat-label {
+            font-size: 1rem;
+            color: #aaa;
+            margin: 0;
+            margin-top: 5px;
+        }
+
+/* About me part close */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Student teach part open */
+.student-section {
+            padding: 80px 0;
+            background-color: #0A0A0B; /* Dark background */
+            color: #f8f9fa; /* Light text color */
+        }
+
+        .student-section .sub-title {
+            color: #aaa; /* Lighter "STUDENT SPOTLIGHT" text */
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .student-section .main-title {
+            color: #fff;
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+
+        .student-card {
+            background-color: #1a1a1c; /* Slightly lighter card background */
+            border-radius: 10px;
+            overflow: hidden; /* This is key for the image zoom effect */
+            height: 100%;
+            border: 2px solid #1a1a1c; /* Start with a matching border */
+            /* The transition for the hover animation */
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* --- The Hover Animation --- */
+        .student-card:hover {
+            /* Lifts the card up */
+            transform: translateY(-10px);
+            /* Adds a subtle yellow glow and border */
+            border-color: #ffc107;
+            box-shadow: 0 10px 30px -5px rgba(255, 193, 7, 0.2);
+        }
+
+        .student-card .img-wrapper {
+            overflow: hidden; /* Ensures the image zoom stays within bounds */
+            border-radius: 10px 10px 0 0;
+        }
+
+        .student-card .img-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            /* Start in grayscale */
+            filter: grayscale(100%);
+            /* Transition for the zoom and filter effect */
+            transition: all 0.4s ease-in-out;
+        }
+
+        /* --- Image zoom and color on hover --- */
+        .student-card:hover .img-wrapper img {
+            transform: scale(1.1);
+            filter: grayscale(0%); /* Fade to full color */
+        }
+
+        .student-card .card-body {
+            padding: 25px;
+        }
+
+        .student-card .student-name {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .student-card .student-classes {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #00bcd4; /* Cyan accent color */
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .student-card .student-classes .fa-book-reader {
+            font-size: 1.1rem;
+        }
+
+        .student-card .student-desc {
+            color: #aaa;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .student-card .read-more-btn {
+            display: inline-block;
+            background-color: #ffc107; /* Yellow accent */
+            color: #111; /* Dark text */
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            /* Transition for the button */
+            transition: all 0.3s ease;
+        }
+
+        .student-card .read-more-btn:hover {
+            background-color: #fff; /* White on hover */
+            color: #000;
+            transform: scale(1.05); /* Slightly larger */
+        }
+/* Student teach part close */
+
+
+/* --- Global Styles and Typography --- */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Social Icon CSS --- */
+.social-links-container {
+    position: fixed;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 1000;
+}
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+    text-decoration: none;
+    color: #333;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.social-icon:hover {
+    transform: scale(1.2) translateX(-5px);
+    color: #fff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.social-icon.facebook:hover { background-color: #1877F2; }
+.social-icon.instagram:hover { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+.social-icon.whatsapp:hover { background-color: #25D366; }
+.social-icon.telegram:hover { background-color: #0088cc; }
+/* --- End of Social Icon CSS --- */
+
+
+/* --- Contact Section Container --- */
+.contact-section {
+    padding: 80px 0;
+    background-color: #0A0A0B; /* Dark background */
+    color: #aaa; /* Default light text */
+}
+
+/* --- Left Column: Contact Info (Placeholder) --- */
+.contact-info-wrapper {
+    background-color: #1a1a1c;
+    padding: 40px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.contact-info-wrapper .main-title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.2rem; /* Large, bold title */
+    margin-bottom: 30px;
+}
+
+.contact-info-wrapper .info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info-wrapper .info-list li {
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+.contact-info-wrapper .info-list li a {
+    color: #aaa;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-start;
+    /* Animation for link hover */
+    transition: all 0.3s ease;
+}
+
+/* --- Contact Info Hover Animation --- */
+.contact-info-wrapper .info-list li a:hover {
+    color: #ffc107; /* Yellow accent */
+    transform: translateX(5px);
+}
+
+.contact-info-wrapper .info-list .icon {
+    font-size: 1.2rem;
+    color: #ffc107; /* Yellow icon */
+    margin-right: 15px;
+    min-width: 25px;
+    padding-top: 3px;
+}
+
+.contact-info-wrapper .info-list .info-text .label {
+    display: block;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.contact-info-wrapper .info-list .info-text .value {
+    line-height: 1.5;
+}
+
+/* --- Right Column: Form --- */
+.form-wrapper {
+    background-color: #1a1a1c;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.form-wrapper .form-label {
+    color: #bbb;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    /* Transition for label color */
+    transition: color 0.3s ease;
+}
+
+.form-wrapper .form-control,
+.form-wrapper .form-select {
+    background-color: #fff; /* White background */
+    border: 2px solid #ccc; /* Light gray border */
+    color: #222; /* Dark text */
+    border-radius: 5px;
+    padding: 12px 15px;
+    /* Transition for border color */
+    transition: all 0.3s ease;
+}
+
+.form-wrapper .form-control::placeholder {
+    color: #999; /* Darker placeholder for white bg */
+}
+
+/* --- Form Field Focus Animation --- */
+.form-wrapper .form-control:focus,
+.form-wrapper .form-select:focus {
+    background-color: #fff; /* Stay white */
+    color: #222; /* Stay dark */
+    border-color: #ffc107; /* Yellow border on focus */
+    box-shadow: 0 0 15px -5px rgba(255, 193, 7, 0.3);
+    outline: none;
+}
+
+/* Make the label yellow on focus */
+.form-wrapper .form-control:focus + .form-label,
+.form-wrapper .form-select:focus + .form-label {
+    color: #ffc107;
+}
+
+/* For browsers that support :placeholder-shown and :valid */
+.form-wrapper .form-control:not(:placeholder-shown) + .form-label,
+.form-wrapper .form-select:valid + .form-label {
+     color: #ffc107;
+}
+
+/* Fix for floating labels (if used, but good for normal too) */
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+     color: #ffc107;
+}
+
+
+.form-wrapper .form-select {
+    /* Style the dropdown arrow (basic) */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23333' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e"); /* Dark arrow */
+}
+
+.form-wrapper .form-select option {
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text */
+}
+
+/* =======================================
+   --- SUBMIT BUTTON STYLES (NEW) ---
+   ======================================= */
+
+/* Container for the two buttons */
+.submit-button-wrapper {
+    display: flex;
+    justify-content: space-between; 
+    padding-top: 20px; /* Add some space above buttons */
+    opacity: 0; /* Start hidden for animation */
+    /* Animation: name duration easing delay iteration fill-mode */
+    animation: fadeInUp 0.8s ease-out 0.5s 1 forwards;
+}
+
+/* Base styling for all custom buttons */
+.submit-button-wrapper .btn {
+    font-weight: 600;
+    padding: 12px 20px; /* Adjusted padding for better fit */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    width: 49%; /* To fit two buttons side-by-side */
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* WhatsApp Button Styles (Green) */
+.submit-button-wrapper .btn-whatsapp {
+    background-color: #25D366; /* WhatsApp Green */
+    color: #fff;
+}
+
+.submit-button-wrapper .btn-whatsapp:hover {
+    background-color: #1FAF59; /* Slightly darker green on hover */
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+}
+
+/* Email Button Styles (Yellow/Amber) */
+.submit-button-wrapper .btn-email {
+    background-color: #ffc107; /* Yellow/Amber accent color from form focus */
+    color: #333; /* Dark text for contrast on light background */
+}
+
+.submit-button-wrapper .btn-email:hover {
+    background-color: #e0a800; /* Slightly darker yellow on hover */
+    color: #333;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+}
+
+
+/* --- Keyframe Animation for Fade In Up --- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* --- End of CSS --- */
+
+
+
+
+
+
+
+
+
+/*scroll button part open */
+.whole{
+    background-color: #08171E;
+}
+
+.title-subhny, .title-subhny.two, .title-subhny.three{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 22px;
+    color: var(--primary-color);
+    position: relative;
+    margin-bottom: 16px;
+}
+.title-w3l, .title-w3l.two {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+#movetop {
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+    z-index: 9;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    padding: 0;
+}
+
+/*scroll button part close */
+
+
+
+
+
+
+/* extra part open */
+ .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* === Progress Bar Section === */
+    .progress-section {
+      padding: 80px 0;
+      overflow: hidden; /* Ensures no overflow issues */
+    }
+
+    .progress-grid {
+      display: grid;
+      /* Two equal columns */
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    /* Text Content (Right Column) */
+    .text-column .section-title {
+      color: #d90429; /* Red color */
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .text-column .main-heading {
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 20px;
+    }
+
+    .text-column p {
+      color: #ccc; /* Light grey text */
+      font-size: 16px;
+    }
+
+    /* Progress Bars (Left Column) */
+    .skill-bar {
+      margin-bottom: 25px;
+    }
+
+    .skill-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-weight: 600;
+      font-size: 17px;
+    }
+
+    .progress-track {
+      height: 10px;
+      background-color: #fff; /* White track */
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background-color: #ffb100; /* Orange/Yellow fill */
+      border-radius: 5px;
+      
+      /* === Animation === */
+      width: 0; /* Start at 0 width */
+      transition: width 1.5s ease-out; /* Smoothly animate the width change */
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .progress-grid {
+        /* Stack columns on mobile */
+        grid-template-columns: 1fr;
+      }
+      
+      .text-column {
+        /* Move text to the top on mobile */
+        order: -1; 
+        margin-bottom: 40px;
+      }
+      
+      .text-column .main-heading {
+        font-size: 32px;
+      }
+    }
+.can{
+    background-color: #0B0C0C !important;
+    color: white;
+}
+/* extra part close */
+
+
+
+
+
+
+
+/* subject part open */
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* === Services Section === */
+    .services-section {
+      padding: 80px 0;
+      overflow: hidden;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center; 
+    }
+
+    /* Left Column Styling */
+    .left-column .service-item {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-bottom: 30px; 
+      padding: 15px; /* Added padding for hover effect */
+      border-radius: 8px; /* Rounded corners for the item itself */
+      background-color: #1a1a1a; /* Slightly lighter dark background for the item */
+      
+      /* === Animation Transition === */
+      transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .left-column .service-item:last-child {
+        margin-bottom: 0; 
+    }
+
+    /* === Hover Animation for Service Items === */
+    .left-column .service-item:hover {
+      background-color: #2a2a2a; /* Darker background on hover */
+      transform: translateY(-5px); /* Lift effect */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    }
+
+    /* Animation for text inside the service item on hover */
+    .left-column .service-item:hover .service-text {
+        transform: translateX(5px); /* Shift text slightly right */
+        transition: transform 0.3s ease; /* Smooth transition for text shift */
+    }
+
+    .service-image img {
+      width: 100px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+      display: block;
+    }
+
+    .service-text h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .service-text p {
+      color: #ccc; 
+      font-size: 15px;
+    }
+
+    /* Right Column Styling */
+    .large-image img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+      display: block;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .right-column {
+        order: -1; 
+        margin-bottom: 40px;
+      }
+    }
+
+    .main_color{
+            background-color: #0B0C0C !important;
+    color: white;
+   }
+/* subject part close */
+
+
+
+
+
+
+
+
+
+
+/* Paid course part open */
+.container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* === Stats & Pricing Section === */
+    .stats-pricing-section {
+      padding: 80px 0;
+      overflow: hidden; /* Important for animations */
+    }
+
+    /* --- Top Stats Part --- */
+    .stats-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+      margin-bottom: 70px;
+    }
+
+    .stats-text h2 {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 20px;
+    }
+    
+    .stats-text h2 .dot {
+      color: #ff6b00; /* Orange dot */
+    }
+
+    .stats-text p {
+      color: #ccc;
+      font-size: 15px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .stat-item h3 {
+      font-size: 48px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .stat-item p {
+      color: #aaa;
+      font-size: 15px;
+    }
+
+    /* --- Bottom Pricing Part --- */
+    .pricing-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+
+    .pricing-card {
+      background-color: #fff;
+      color: #333;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 30px;
+      text-align: center;
+      
+      /* === Hover Animation Transition === */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-10px); /* Lift effect */
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .pricing-card h4 {
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .pricing-card .price .amount {
+      font-size: 42px;
+      font-weight: 700;
+      color: #ff6b00; /* Orange price */
+    }
+
+    .pricing-card .price .frequency {
+      font-size: 14px;
+      color: #888;
+      text-transform: uppercase;
+    }
+
+    .pricing-card .features {
+      list-style: none;
+      margin: 25px 0;
+      color: #666;
+    }
+
+    .pricing-card .features li {
+      margin-bottom: 10px;
+    }
+
+    .btn-get-started {
+      display: inline-block;
+      padding: 10px 30px;
+      border: 2px solid #333;
+      color: #333;
+      background-color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 5px;
+      
+      /* === Button Hover Transition === */
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn-get-started:hover {
+      background-color: #333;
+      color: #fff;
+    }
+
+    /* === Scroll-in Animation === */
+    .hidden-load {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    /* Staggered delay for elements */
+    .stat-item:nth-child(1) { transition-delay: 0.1s; }
+    .stat-item:nth-child(2) { transition-delay: 0.2s; }
+    .stat-item:nth-child(3) { transition-delay: 0.3s; }
+    .stat-item:nth-child(4) { transition-delay: 0.4s; }
+
+    .pricing-card:nth-child(1) { transition-delay: 0.2s; }
+    .pricing-card:nth-child(2) { transition-delay: 0.3s; }
+    .pricing-card:nth-child(3) { transition-delay: 0.4s; }
+    .pricing-card:nth-child(4) { transition-delay: 0.5s; }
+
+
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      .stats-container {
+        grid-template-columns: 1fr;
+      }
+      .stats-text {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .pricing-container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .stats-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .pricing-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+.background_color{
+    background-color: #0B0C0C !important;
+    color: white;
+
+}
+/* Paid course part close */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer last part open  */
+        /* Ensure the main content takes up available space */
+        .content-wrapper {
+            flex: 1;
+        }
+
+        .footer-sub {
+            background-color: #0A0A0B; /* User requested background color */
+            color: #aaa; /* Default text color for the footer */
+        }
+
+        .footer-sub h6 {
+            color: #fff; /* White headings */
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .footer-sub p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* --- Link Hover Animations --- */
+        .footer-sub ul {
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .footer-sub ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-sub ul li a {
+            color: #aaa;
+            text-decoration: none;
+            display: inline-block;
+            /* This is the magic! Smooth transition for transform and color */
+            transition: all 0.3s ease-in-out;
+        }
+
+        .footer-sub ul li a:hover {
+            color: #ffc107; /* Yellow accent color on hover */
+            /* This moves the link slightly to the right */
+            transform: translateX(8px);
+        }
+
+        .footer-sub ul li a .fa-chevron-right {
+            font-size: 0.8em;
+            /* Transition for the icon color */
+            transition: color 0.3s ease-in-out;
+        }
+
+
+        /* --- Social Icon Animations --- */
+        .social li {
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .social li a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: #333;
+            color: #fff;
+            font-size: 1rem;
+            /* Transition for transform and background-color */
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .social li a:hover {
+            background-color: #ffc107; /* Bright background on hover */
+            color: #111; /* Dark icon on hover */
+            /* This gives a nice bounce/pop effect */
+            transform: scale(1.1) translateY(-3px);
+            /* Resetting the translateX from the other link rule */
+            transform: scale(1.1) translateY(-3px) translateX(0);
+        }
+
+        /* --- Copyright Section --- */
+        .copyright-footer {
+            background-color: #0A0A0B; /* User requested background color */
+            color: #888;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+
+        .copyright-footer p {
+            margin: 0;
+        }
+
+        .copyright-footer a {
+            color: #ffc107; /* Accent color for the link */
+            text-decoration: none;
+            font-weight: 500;
+            /* Simple color transition */
+            transition: color 0.3s ease;
+        }
+
+        .copyright-footer a:hover {
+            color: #fff; /* Brighter on hover */
+        }
+/* footer part close */
+
+
+
+
+
+
+
+
+
+
+
+/* Social Media Icon open */
+.social-icons .icon-box {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(45deg, #fb923c, #fbbf24);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.4s ease;
+    font-size: 20px;
+}
+
+.social-icons .icon-box:hover {
+    background: white;
+    color: #007bff;
+    transform: scale(1.2) rotate(10deg);
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.4);
+}
+
+/* Social Media Icon close */
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#messageContainer {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* small  */
+.smaller{
+  font-size: 51px;
+  float: left;
+}
